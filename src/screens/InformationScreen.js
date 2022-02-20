@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
-import {Picker} from '@react-native-picker/picker';
+import {DropDown} from '../components/DropDown';
 
 export function InformationScreen({navigation}) {
   const [pickerValue, setPickerValue] = useState('');
@@ -10,23 +10,9 @@ export function InformationScreen({navigation}) {
       <View>
         <Text style={styles.title}>Information Screen</Text>
       </View>
-      <View style={styles.DropdownArea}>
-        <Text
-          style={{
-            fontWeight: 'bold',
-            fontSize: 18,
-            paddingTop: 10,
-            // justifyContent: 'space-around',
-          }}>
-          Select Gender
-        </Text>
-        <Picker
-          style={styles.picker}
-          selectedValue={pickerValue}
-          onValueChange={itemValue => setPickerValue(itemValue)}>
-          <Picker.Item label="male" value="male" />
-          <Picker.Item label="female" value="female" />
-        </Picker>
+      <View>
+        <DropDown />
+        {/* <DropDown /> */}
       </View>
       <View style={styles.viewBottom}>
         <TouchableOpacity onPress={() => navigation.navigate('Dashboard')}>
@@ -40,24 +26,15 @@ export function InformationScreen({navigation}) {
 }
 
 const styles = StyleSheet.create({
-  container: {flex: 1, padding: 20},
+  container: {
+    flex: 1,
+  },
+
   title: {
     paddingTop: 20,
     fontWeight: 'bold',
     fontSize: 20,
-
     alignSelf: 'center',
-  },
-  DropdownArea: {
-    top: 30,
-    flexDirection: 'row',
-  },
-  picker: {
-    width: 150,
-    height: 45,
-    borderwidth: 2,
-    borderColor: 'red',
-    backgroundColor: 'white',
   },
   viewBottom: {
     flex: 1,
@@ -71,10 +48,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#244DB7',
+    backgroundColor: '#384E78',
   },
   textNext: {
     color: '#ffffff',
     alignItems: 'center',
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 });

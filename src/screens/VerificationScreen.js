@@ -15,19 +15,19 @@ export function VerificationScreen({navigation}) {
           mode="outlined"
           label="Name"
           placeholder="Enter Name"
-          right={<TextInput.Affix text="/10" />}
+          right={<TextInput.Affix />}
         />
         <TextInput
           mode="outlined"
           label="Email"
           placeholder="Enter Email"
-          right={<TextInput.Affix text="/10" />}
+          right={<TextInput.Affix />}
         />
         <TextInput
           mode="outlined"
           label="Address"
           placeholder="Enter Address"
-          right={<TextInput.Affix text="/10" />}
+          right={<TextInput.Affix />}
         />
       </View>
       <View style={styles.viewBottom}>
@@ -62,10 +62,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#244DB7',
+    backgroundColor: '#384E78',
   },
   textNext: {
     color: '#ffffff',
     alignItems: 'center',
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 });

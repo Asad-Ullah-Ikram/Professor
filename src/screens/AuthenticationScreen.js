@@ -73,7 +73,7 @@ export function AuthenticationScreen({navigation}) {
               style={[
                 styles.btnContinue,
                 {
-                  backgroundColor: phoneNumber ? '#244DB7' : 'gray',
+                  backgroundColor: phoneNumber ? '#384E78' : 'gray',
                 },
               ]}>
               <Text style={styles.textContinue}>Continue</Text>
@@ -134,5 +134,7 @@ const styles = StyleSheet.create({
   textContinue: {
     color: '#ffffff',
     alignItems: 'center',
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 });
