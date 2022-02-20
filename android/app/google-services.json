@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "662978445018",
+    "project_id": "professor-rn",
+    "storage_bucket": "professor-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662978445018:android:db866c75fc5798a58a2fe3",
+        "android_client_info": {
+          "package_name": "com.professorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662978445018-tstb1i1drn2so6cac7580c86sddg7gmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGjowclw5Bb1TAar5sQPYDq_P4ujRIXAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662978445018-tstb1i1drn2so6cac7580c86sddg7gmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
