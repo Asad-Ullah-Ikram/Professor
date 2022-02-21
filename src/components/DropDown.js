@@ -6,16 +6,18 @@ export function DropDown() {
   const [pickerValue, setPickerValue] = useState('Gender');
 
   return (
-    <View style={styles.container}>
-      <View style={styles.DropdownArea}>
-        <Picker
-          style={styles.picker}
-          selectedValue={pickerValue}
-          onValueChange={itemValue => setPickerValue(itemValue)}>
-          <Picker.Item label="Gender" value="Gender" />
-          <Picker.Item label="male" value="male" />
-          <Picker.Item label="female" value="female" />
-        </Picker>
+    <View>
+      <View>
+        <View style={styles.DropdownArea}>
+          <Picker
+            style={styles.picker}
+            selectedValue={pickerValue}
+            onValueChange={itemValue => setPickerValue(itemValue)}>
+            <Picker.Item label="Select Gender" value="Select Gender" />
+            <Picker.Item label="male" value="male" />
+            <Picker.Item label="female" value="female" />
+          </Picker>
+        </View>
       </View>
     </View>
   );

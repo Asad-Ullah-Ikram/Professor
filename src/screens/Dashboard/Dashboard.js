@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Card, Title, Paragraph} from 'react-native-paper';
 
-const Dashboard = () => {
+const Dashboard = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View>

@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 import {DropDown} from '../components/DropDown';
+import {DropDown2} from '../components/DropDown2';
+import {DropDown3} from '../components/DropDown3';
+import {DropDown4} from '../components/DropDown4';
 
 export function InformationScreen({navigation}) {
-  const [pickerValue, setPickerValue] = useState('');
-
   return (
     <View style={styles.container}>
       <View>
@@ -12,8 +13,15 @@ export function InformationScreen({navigation}) {
       </View>
       <View>
         <DropDown />
-        {/* <DropDown /> */}
+        <DropDown2 />
+        <DropDown3 />
+        {/* <DropDown4 /> */}
       </View>
+
+      {/* <View>
+        <DropDown2 />
+      </View> */}
+
       <View style={styles.viewBottom}>
         <TouchableOpacity onPress={() => navigation.navigate('Dashboard')}>
           <View style={styles.btnNext}>
